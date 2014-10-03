@@ -49,6 +49,8 @@
     if ([hardware isEqualToString:@"iPhone5,4"])    return IPHONE_5C_CDMA_GSM;
     if ([hardware isEqualToString:@"iPhone6,1"])    return IPHONE_5S;
     if ([hardware isEqualToString:@"iPhone6,2"])    return IPHONE_5S_CDMA_GSM;
+    if ([hardware isEqualToString:@"iPhone7,1"])    return IPHONE_6_PLUS;
+    if ([hardware isEqualToString:@"iPhone7,2"])    return IPHONE_6;
     
     if ([hardware isEqualToString:@"iPod1,1"])      return IPOD_TOUCH_1G;
     if ([hardware isEqualToString:@"iPod2,1"])      return IPOD_TOUCH_2G;
@@ -98,6 +100,8 @@
     if ([hardware isEqualToString:@"iPhone5,4"])    return @"iPhone 5C (Global)";
     if ([hardware isEqualToString:@"iPhone6,1"])    return @"iPhone 5S (GSM)";
     if ([hardware isEqualToString:@"iPhone6,2"])    return @"iPhone 5S (Global)";
+    if ([hardware isEqualToString:@"iPhone7,1"])    return @"iPhone 6 Plus (Global)";
+    if ([hardware isEqualToString:@"iPhone7,2"])    return @"iPhone 5 (Global)";
     
     if ([hardware isEqualToString:@"iPod1,1"])      return @"iPod Touch (1 Gen)";
     if ([hardware isEqualToString:@"iPod2,1"])      return @"iPod Touch (2 Gen)";
@@ -152,6 +156,8 @@
     if ([hardware isEqualToString:@"iPhone5,4"])    return @"iPhone 5C";
     if ([hardware isEqualToString:@"iPhone6,1"])    return @"iPhone 5S";
     if ([hardware isEqualToString:@"iPhone6,2"])    return @"iPhone 5S";
+    if ([hardware isEqualToString:@"iPhone7,1"])    return @"iPhone 6 Plus";
+    if ([hardware isEqualToString:@"iPhone7,2"])    return @"iPhone 6";
     
     if ([hardware isEqualToString:@"iPod1,1"])      return @"iPod Touch (1 Gen)";
     if ([hardware isEqualToString:@"iPod2,1"])      return @"iPod Touch (2 Gen)";
@@ -208,6 +214,8 @@
         case IPHONE_5C_CDMA_GSM:    return 5.4f;
         case IPHONE_5S:    return 6.1f;
         case IPHONE_5S_CDMA_GSM:    return 6.2f;
+        case IPHONE_6_PLUS: return 7.1f;
+        case IPHONE_6:  return 7.2f;
             
         case IPOD_TOUCH_1G:    return 1.1f;
         case IPOD_TOUCH_2G:    return 2.1f;
